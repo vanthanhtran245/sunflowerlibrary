@@ -1,7 +1,7 @@
 package com.thanhtv.sunflowerlibrary.extensions.core
 
 
-import sunflower.com.source.global.Const
+import com.thanhtv.sunflowerlibrary.extensions.Const
 
 /**
  * User: mcxiaoke

@@ -1,7 +1,7 @@
 package com.thanhtv.sunflowerlibrary.extensions.core
 
-import sunflower.com.source.global.Const
-import sunflower.com.source.global.Encoding
+import com.thanhtv.sunflowerlibrary.extensions.Const
+import com.thanhtv.sunflowerlibrary.extensions.Encoding
 import java.io.File
 import java.io.UnsupportedEncodingException
 import java.net.URLDecoder
