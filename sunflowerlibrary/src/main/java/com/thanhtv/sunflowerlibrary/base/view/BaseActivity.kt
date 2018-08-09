@@ -14,7 +14,7 @@ import dagger.android.AndroidInjection
 abstract class BaseActivity : AppCompatActivity(), MVPView {
 
     private var progressDialog: ProgressDialog? = null
-    protected var fragmentCallBack: BaseFragment.CallBack? = null
+    var fragmentCallBack: BaseFragment.CallBack? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,12 +1,10 @@
-package sunflower.com.source.ui.base.view
+package com.thanhtv.sunflowerlibrary.base.view
 
 import android.app.ProgressDialog
 import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.DialogFragment
 import android.support.v4.app.FragmentManager
-import com.thanhtv.sunflowerlibrary.base.view.BaseActivity
-import com.thanhtv.sunflowerlibrary.base.view.DialogMVPView
 import com.thanhtv.sunflowerlibrary.utils.CommonUtil
 import dagger.android.support.AndroidSupportInjection
 
@@ -24,7 +22,7 @@ abstract class BaseDialogView : DialogFragment(), DialogMVPView {
         if (context is BaseActivity) {
             val activity = context as BaseActivity?
             this.parentActivity = activity
-            activity?.onFragmentAttached()
+            activity?.fragmentCallBack?.onFragmentAttached()
         }
     }
 
@@ -61,7 +59,7 @@ abstract class BaseDialogView : DialogFragment(), DialogMVPView {
 
     fun dismissDialog(tag: String) {
         dismiss()
-        getBaseActivity()?.onFragmentDetached(tag)
+        getBaseActivity()?.fragmentCallBack?.onFragmentDetached(tag)
     }
 
     private fun getBaseActivity(): BaseActivity? {

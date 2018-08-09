@@ -22,7 +22,7 @@ abstract class BaseFragment : Fragment(), MVPView {
         if (context is BaseActivity) {
             val activity = context as BaseActivity?
             this.parentActivity = activity
-            activity?.onFragmentAttached()
+            activity?.fragmentCallBack?.onFragmentAttached()
         }
     }
 
