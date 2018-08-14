@@ -91,7 +91,7 @@ dependencies {
 
     // Android Kotlin Extension
     implementation "androidx.core:core-ktx:$androidKTXVersion"
-
+    implementation "com.wajahatkarim3.easyvalidation:easyvalidation-core:1.0.1"
 }
 
 repositories {
